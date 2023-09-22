@@ -1,38 +1,396 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 800px;
+  width: 1500px;
+}
+.Container{
+  border: 1px solid black;
+  height: 500px;
+  width: 1000px;
+  display: flex;
+  justify-content: flex-end;
+  background: 
+  linear-gradient(169.47deg, rgba(4, 31, 27, 0.98) 14.76%, #380C4A 25.62%, #3B0E46 29.25%, #3D0F42 33.37%, #441436 40.15%, #33254E 46.18%, #2B2D59 52.47%, #292654 57.59%, #271F4F 62.33%, #240D37 74.06%, #22052D 88.22%, #22052D 125.39%, #22052D 154.65%, #22052D 154.67%),
+  radial-gradient(26.86% 9.25% at 52.64% 24.47%, rgba(78, 26, 69, 0.2) 0%, rgba(69, 20, 43, 0.2) 14.29%, rgba(69, 20, 43, 0.2) 28.57%, rgba(61, 14, 18, 0.2) 42.86%, rgba(61, 13, 15, 0.2) 57.14%, rgba(61, 13, 15, 0.2) 71.43%, rgba(61, 13, 15, 0.2) 85.71%, rgba(60, 13, 13, 0.2) 100%);
+}
+.cardEntry{
+  border: 1px solid floralwhite;
+  display: flex;
+  justify-content: flex-end;
+  width: 70%;
+  background: white;
+}
+.dataEntry{
+  /* border: 1px solid black; */
+  height: 350px;
+  width: 50%;
+  margin-top: 80px;
+  margin-right: 50px;
+}
+.labelName{
+  width: 144px;
+height: 9px;
+top: 5px;
+position: relative;
+font-family: "Croissant One", sans-serif;
+font-size: 12px;
+font-weight: 700;
+line-height: 14px;
+letter-spacing: 0.155em;
+text-align: left;
+}
+.entryName{
+  width: 300px;
+height: 44px;
+top: 10px;
+left: 8px;
+border-radius: 6px;
+border: 1px solid rgba(0, 0, 0, 0.13);
+position: relative;
+}
+.LabelNumber{
+  width: 144px;
+height: 9px;
+top: 20px;
+position: relative;
+font-family: "Croissant One", sans-serif;
+font-size: 12px;
+font-weight: 700;
+line-height: 14px;
+letter-spacing: 0.155em;
+text-align: left;
+}
+.entryNumber{
+  width: 300px;
+height: 44px;
+top: 25px;
+left: 8px;
+border-radius: 6px;
+border: 1px solid rgba(0, 0, 0, 0.13);
+position: relative;
+}
+.LabelExpdate{
+  width: 144px;
+height: 9px;
+top: 35px;
+position: relative;
+font-family: "Croissant One", sans-serif;
+font-size: 12px;
+font-weight: 700;
+line-height: 14px;
+letter-spacing: 0.155em;
+text-align: left;
+}
+.entryMonth{
+  width: 78px;
+height: 20px;
+top: 40px;
+left: 8px;
+text-align: center;
+border-radius: 6px;
+border: 1px solid rgba(0, 0, 0, 0.13);
+position: relative;
+}
+.entryYear{
+  width: 78px;
+height: 20px;
+top: 17px;
+left: 100px;
+text-align: center;
+border-radius: 6px;
+border: 1px solid rgba(0, 0, 0, 0.13);
+position: relative;
+}
+.LabelCvv{
+  width: 144px;
+height: 9px;
+top: -33px;
+left: 220px;
+position: relative;
+font-family: "Croissant One", sans-serif;
+font-size: 12px;
+font-weight: 700;
+line-height: 14px;
+letter-spacing: 0.155em;
+text-align: left;
+}
+.entryCvv{
+  width: 78px;
+height: 20px;
+top: -28px;
+left: 220px;
+text-align: center;
+border-radius: 6px;
+border: 1px solid rgba(0, 0, 0, 0.13);
+position: relative;
+}
+.submit{
+  width: 320px;
+height: 53px;
+top: 845px;
+left: -3715px;
+border-radius: 6px;
+}
+.text{
+  width: 63px;
+height: 16px;
+font-family: 'Inter';
+font-size: 16px;
+font-weight: 500;
+line-height: 19px;
+letter-spacing: 0.01em;
+text-align: left;
 }
 
-.App-link {
-  color: #61dafb;
+.CardShow1{
+width: 350px;
+height: 200px;
+position: absolute;
+top: 210px;
+left: 350px;
+border-radius: 10px;
+border: 1px solid black;
+z-index: 3;
+background-image: url('background.jpg'); 
+  background-size: cover;
+color: white;
+}
+.CardShow1 h1{
+  width: 325px;
+height: 27px;
+top: 90px;
+position: absolute;
+left: 33px;
+font-family: Inter;
+font-size: 20px;
+font-weight: 400;
+line-height: 31px;
+letter-spacing: 0.18em;
+text-align: left;
+}
+.CardShow1 h2{
+  width: 155px;
+height: 11px;
+top: 160px;
+position: absolute;
+left: 12px;
+font-family: Roboto;
+font-size: 13px;
+font-weight: 700;
+line-height: 15px;
+letter-spacing: 0.19em;
+text-align: left;
+}
+.CardShow1 h4{
+  width: 51px;
+height: 13px;
+top: 155px;
+position: absolute;
+left: 280px;
+font-family: Roboto;
+font-size: 14px;
+font-weight: 700;
+line-height: 16px;
+letter-spacing: 0.235em;
+text-align: left;
+
+}
+.bigCircle{
+  width: 47px;
+height: 47px;
+top: 30px;
+left: 33px;
+position: absolute;
+z-index: 2;
+border-radius: 200px;
+background: white;
+}
+.smallCircle{
+position: absolute;
+z-index: 2;
+border: 2px solid white;
+border-radius: 100px;
+width: 19px;
+height: 19px;
+top: 46px;
+left: 97px;
+background: linear-gradient(127.75deg, #623FF2 19.57%, #5E37EC 93.11%),linear-gradient(0deg, #FFFFFF, #FFFFFF);
+/* border: 1.5px; */
+}
+.CardShow2{
+  width: 350px;
+  height: 200px;
+  position: absolute;
+  top:430px;
+  left: 400px;
+  border-radius: 10px;
+  border: 1px solid black;
+  z-index: 2;
+  background: linear-gradient(106.8deg, #FFFFFF 0%, #D9D9D9 103.94%);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.blackBox{
+  width: 341px;
+height: 52px;
+top: 10px;
+left: 0px;
+background: black;
+border: 5px solid black;
+z-index: 3;
+position: absolute;
 }
+.whiteBox{
+  width: 280px;
+height: 30px;
+top: 80px;
+left: 23px;
+background: rgba(173, 182, 191, 1);
+border-radius: 4px;
+margin: 10px;
+border: 1px solid black;
+z-index: 2;
+color: white;
+font-size: 8px;
+text-align: end;
+padding-top: 0;
+padding-bottom: 7px;
+padding-right: 7px;
+position: absolute;
+}
+
+.dotsOne{
+  width: 90px;
+  height: 5px;
+  top: 135px;
+left: 50px;
+position: absolute;
+background-color: rgba(174, 181, 189, 1);
+  border-radius: 4px;
+  border: 1px solid black;
+z-index: 2;
+}
+.dotsTwo{
+  width: 30px;
+  height: 5px;
+  top: 135px;
+left: 155px;
+position: absolute;
+background-color: rgba(174, 181, 189, 1);
+  border-radius: 4px;
+  border: 1px solid black;
+z-index: 2;
+}
+.dotsThree{
+  width: 25px;
+  height: 5px;
+  top: 135px;
+left: 200px;
+position: absolute;
+background-color: rgba(174, 181, 189, 1);
+  border-radius: 4px;
+  border: 1px solid black;
+z-index: 2;
+}
+.dotsFour{
+  width: 13px;
+  height: 5px;
+  top: 135px;
+left: 240px;
+position: absolute;
+background-color: rgba(174, 181, 189, 1);
+  border-radius: 4px;
+  border: 1px solid black;
+z-index: 2;
+}
+
+.dotsFive{
+  width: 22px;
+  height: 5px;
+  top: 155px;
+left: 60px;
+position: absolute;
+background-color: rgba(174, 181, 189, 1);
+  border-radius: 4px;
+  border: 1px solid black;
+z-index: 2;
+}
+.dotsSix{
+  width: 61px;
+  height: 5px;
+  top: 155px;
+left: 100px;
+position: absolute;
+background-color: rgba(174, 181, 189, 1);
+  border-radius: 4px;
+  border: 1px solid black;
+z-index: 2;
+}
+.dotsSeven{
+  width: 46px;
+  height: 5px;
+  top: 155px;
+left: 170px;
+position: absolute;
+background-color: rgba(174, 181, 189, 1);
+  border-radius: 4px;
+  border: 1px solid black;
+z-index: 2;
+}
+.dotsEight{
+  width: 9px;
+  height: 5px;
+  top: 155px;
+left: 230px;
+position: absolute;
+background-color: rgba(174, 181, 189, 1);
+  border-radius: 4px;
+  border: 1px solid black;
+z-index: 2;
+}
+.dotsNine{
+  width: 90px;
+  height: 5px;
+  top: 175px;
+  left: 50px;
+  position: absolute;
+  background-color: rgba(174, 181, 189, 1);
+  border-radius: 4px;
+  border: 1px solid black;
+  z-index: 2;
+}
+.dotsTen{
+  width: 30px;
+  height: 5px;
+  top: 175px;
+left: 155px;
+position: absolute;
+background-color: rgba(174, 181, 189, 1);
+  border-radius: 4px;
+  border: 1px solid black;
+z-index: 2;
+}
+.dotsEleven{
+  width: 25px;
+  height: 5px;
+  top: 175px;
+left: 200px;
+position: absolute;
+background-color: rgba(174, 181, 189, 1);
+  border-radius: 4px;
+  border: 1px solid black;
+z-index: 2;
+}
+.dotsTwelev{
+  width: 13px;
+  height: 5px;
+  top: 175px;
+left: 240px;
+position: absolute;
+background-color: rgba(174, 181, 189, 1);
+  border-radius: 4px;
+  border: 1px solid black;
+z-index: 2;
+}
+
