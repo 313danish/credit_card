@@ -1,0 +1,253 @@
+.CardShow1{
+    width: 350px;
+    height: 200px;
+    position: relative;
+    top: 35px;
+    left: 100px;
+    border-radius: 10px;
+    border: 1px solid black;
+    z-index: 3;
+    background-image: url('background.jpg'); 
+      background-size: cover;
+    color: white;
+    }
+    .CardShow1 h1{
+      width: 325px;
+    height: 27px;
+    top: 15px;
+    position: relative;
+    left: 33px;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 31px;
+    letter-spacing: 0.18em;
+    z-index: 3;
+    text-align: left;
+    }
+    .CardShow1 h2{
+      width: 155px;
+    height: 11px;
+    top: 45px;
+    position: relative;
+    left: 12px;
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 0.19em;
+    z-index: 3;
+    text-align: left;
+    }
+    .CardShow1 h4{
+      width: 51px;
+    height: 13px;
+    top: 20px;
+    position: relative;
+    left: 280px;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.235em;
+    z-index: -3;
+    text-align: left;
+    
+    }
+    .bigCircle{
+      width: 47px;
+    height: 47px;
+    top: 20px;
+    left: 33px;
+    position: relative;
+    z-index: 2;
+    border-radius: 200px;
+    background: white;
+    }
+    .smallCircle{
+    position: relative;
+    z-index: 2;
+    border: 2px solid white;
+    border-radius: 100px;
+    width: 19px;
+    height: 19px;
+    top: -8px;
+    left: 97px;
+    background: linear-gradient(127.75deg, #623FF2 19.57%, #5E37EC 93.11%),linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    /* border: 1.5px; */
+    }
+    .CardShow2{
+      width: 350px;
+      height: 200px;
+      position: relative;
+      top: 45px;
+      left: 160px;
+      border-radius: 10px;
+      border: 1px solid black;
+      z-index: 2;
+      background: linear-gradient(106.8deg, #FFFFFF 0%, #D9D9D9 103.94%);
+    }
+    
+    .blackBox{
+      width: 341px;
+    height: 52px;
+    top: 10px;
+    left: 0px;
+    background: black;
+    border: 5px solid black;
+    z-index: 3;
+    position: absolute;
+    }
+    .whiteBox{
+      width: 280px;
+    height: 30px;
+    top: 80px;
+    left: 23px;
+    background: rgba(173, 182, 191, 1);
+    border-radius: 4px;
+    margin: 10px;
+    border: 1px solid black;
+    z-index: 2;
+    color: white;
+    font-size: 8px;
+    text-align: end;
+    padding-top: 0;
+    padding-bottom: 7px;
+    padding-right: 7px;
+    position: absolute;
+    }
+    
+    .dotsOne{
+      width: 90px;
+      height: 5px;
+      top: 135px;
+    left: 50px;
+    position: absolute;
+    background-color: rgba(174, 181, 189, 1);
+      border-radius: 4px;
+      border: 1px solid black;
+    z-index: 2;
+    }
+    .dotsTwo{
+      width: 30px;
+      height: 5px;
+      top: 135px;
+    left: 155px;
+    position: absolute;
+    background-color: rgba(174, 181, 189, 1);
+      border-radius: 4px;
+      border: 1px solid black;
+    z-index: 2;
+    }
+    .dotsThree{
+      width: 25px;
+      height: 5px;
+      top: 135px;
+    left: 200px;
+    position: absolute;
+    background-color: rgba(174, 181, 189, 1);
+      border-radius: 4px;
+      border: 1px solid black;
+    z-index: 2;
+    }
+    .dotsFour{
+      width: 13px;
+      height: 5px;
+      top: 135px;
+    left: 240px;
+    position: absolute;
+    background-color: rgba(174, 181, 189, 1);
+      border-radius: 4px;
+      border: 1px solid black;
+    z-index: 2;
+    }
+    
+    .dotsFive{
+      width: 22px;
+      height: 5px;
+      top: 155px;
+    left: 60px;
+    position: absolute;
+    background-color: rgba(174, 181, 189, 1);
+      border-radius: 4px;
+      border: 1px solid black;
+    z-index: 2;
+    }
+    .dotsSix{
+      width: 61px;
+      height: 5px;
+      top: 155px;
+    left: 100px;
+    position: absolute;
+    background-color: rgba(174, 181, 189, 1);
+      border-radius: 4px;
+      border: 1px solid black;
+    z-index: 2;
+    }
+    .dotsSeven{
+      width: 46px;
+      height: 5px;
+      top: 155px;
+    left: 170px;
+    position: absolute;
+    background-color: rgba(174, 181, 189, 1);
+      border-radius: 4px;
+      border: 1px solid black;
+    z-index: 2;
+    }
+    .dotsEight{
+      width: 9px;
+      height: 5px;
+      top: 155px;
+    left: 230px;
+    position: absolute;
+    background-color: rgba(174, 181, 189, 1);
+      border-radius: 4px;
+      border: 1px solid black;
+    z-index: 2;
+    }
+    .dotsNine{
+      width: 90px;
+      height: 5px;
+      top: 175px;
+      left: 50px;
+      position: absolute;
+      background-color: rgba(174, 181, 189, 1);
+      border-radius: 4px;
+      border: 1px solid black;
+      z-index: 2;
+    }
+    .dotsTen{
+      width: 30px;
+      height: 5px;
+      top: 175px;
+    left: 155px;
+    position: absolute;
+    background-color: rgba(174, 181, 189, 1);
+      border-radius: 4px;
+      border: 1px solid black;
+    z-index: 2;
+    }
+    .dotsEleven{
+      width: 25px;
+      height: 5px;
+      top: 175px;
+    left: 200px;
+    position: absolute;
+    background-color: rgba(174, 181, 189, 1);
+      border-radius: 4px;
+      border: 1px solid black;
+    z-index: 2;
+    }
+    .dotsTwelev{
+      width: 13px;
+      height: 5px;
+      top: 175px;
+    left: 240px;
+    position: absolute;
+    background-color: rgba(174, 181, 189, 1);
+      border-radius: 4px;
+      border: 1px solid black;
+    z-index: 2;
+    }
+    
