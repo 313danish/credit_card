@@ -24,7 +24,7 @@
 }
 .dataEntry{
   /* border: 1px solid black; */
-  height: 350px;
+  height: 400px;
   width: 50%;
   margin-top: 80px;
   margin-right: 50px;
@@ -53,7 +53,7 @@ position: relative;
 .LabelNumber{
   width: 144px;
 height: 9px;
-top: 20px;
+top: 30px;
 position: relative;
 font-family: "Croissant One", sans-serif;
 font-size: 12px;
@@ -65,7 +65,7 @@ text-align: left;
 .entryNumber{
   width: 300px;
 height: 44px;
-top: 25px;
+top: 38px;
 left: 8px;
 border-radius: 6px;
 border: 1px solid rgba(0, 0, 0, 0.13);
@@ -74,7 +74,7 @@ position: relative;
 .LabelExpdate{
   width: 144px;
 height: 9px;
-top: 35px;
+top: 40px;
 position: relative;
 font-family: "Croissant One", sans-serif;
 font-size: 12px;
@@ -86,7 +86,7 @@ text-align: left;
 .entryMonth{
   width: 78px;
 height: 20px;
-top: 40px;
+top: 50px;
 left: 8px;
 text-align: center;
 border-radius: 6px;
@@ -96,7 +96,7 @@ position: relative;
 .entryYear{
   width: 78px;
 height: 20px;
-top: 17px;
+top: 27px;
 left: 100px;
 text-align: center;
 border-radius: 6px;
@@ -106,7 +106,7 @@ position: relative;
 .LabelCvv{
   width: 144px;
 height: 9px;
-top: -33px;
+top: -25px;
 left: 220px;
 position: relative;
 font-family: "Croissant One", sans-serif;
@@ -117,10 +117,10 @@ letter-spacing: 0.155em;
 text-align: left;
 }
 .entryCvv{
-  width: 78px;
+  width: 120px;
 height: 20px;
-top: -28px;
-left: 220px;
+top: -20px;
+left: 200px;
 text-align: center;
 border-radius: 6px;
 border: 1px solid rgba(0, 0, 0, 0.13);
@@ -129,9 +129,18 @@ position: relative;
 .submit{
   width: 320px;
 height: 53px;
-top: 845px;
-left: -3715px;
+position: relative;
+top: 0px;
+left: 9px;
 border-radius: 6px;
+}
+.entryName,
+.entryNumber,
+.entryMonth,
+.entryYear,
+.entryCvv {
+  /* Other styles for your input fields */
+  overflow: hidden;
 }
 .text{
   width: 63px;
@@ -394,3 +403,46 @@ background-color: rgba(174, 181, 189, 1);
 z-index: 2;
 }
 
+.errors{
+  font-family: Inter;
+font-size: 12px;
+font-weight: 400;
+line-height: 15px;
+letter-spacing: 0em;
+position: relative;
+text-align: left;
+width: 125px;
+height: 15px;
+top: 10px;
+left: 10px;
+color: rgba(248, 18, 18, 1);
+}
+.errorsNumber{
+  font-family: Inter;
+font-size: 12px;
+font-weight: 400;
+line-height: 15px;
+letter-spacing: 0em;
+position: relative;
+text-align: left;
+width: 125px;
+height: 15px;
+top: 35px;
+left: 10px;
+color: rgba(248, 18, 18, 1); 
+}
+
+.errorsCvv{
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0em;
+  position: relative;
+  text-align: left;
+  width: 125px;
+  height: 15px;
+  top: -15px;
+  left: 200px;
+  color: rgba(248, 18, 18, 1); 
+}

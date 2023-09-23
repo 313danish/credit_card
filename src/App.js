@@ -1,5 +1,32 @@
+import { useState } from 'react';
 import './App.css';
 function App() {
+  const [name,setName]=useState('')
+  const [cardNumber,setcardNumber]=useState('')
+  const [cvv,setCvv]=useState('')
+  const [error,setError]=useState(false)
+  const handleChangeCardNumber = (e) => {
+    const re = /^[0-9\b]+$/;
+    if (e.target.value === '' || re.test(e.target.value)) {
+      setcardNumber(e.target.value);
+    }
+  };
+  const handleChangeCvv = (e) => {
+    const re = /^[0-9\b]+$/;
+    if (e.target.value === '' || re.test(e.target.value)) {
+      setCvv(e.target.value);
+    }
+  };
+  const handleSubmit =(e)=>{
+    e.preventDefault();
+    const numericRegex = /^[0-9]+$/;
+    if(cardNumber.length ===0 || name.length === 0 || !numericRegex.test(cvv)){
+      setError(true);
+    }
+    else{
+    console.log('name',name,'number',cardNumber,'cvv',cvv)
+    }
+  };
   return (
     <div className="App">
       <div className='Container'>
@@ -33,15 +60,21 @@ function App() {
           
           <div className='dataEntry'>
             <label className='labelName'>CARDHOLDER NAME</label> <br />
-            <input className="entryName" type="text" placeholder='e.g Jane Appleseed' /> <br />
+            <input onChange={e=>setName(e.target.value)} className="entryName" type="text" placeholder='e.g Jane Appleseed'  /> <br />
+            {error&&name.length<=0 ?
+            <label className='errors'>Cardholder name required</label>: " "} <br />
             <label className='LabelNumber' >CARD NUMBER</label> <br />
-            <input className="entryNumber" type="text" placeholder='e.g 1234 5678 9123 0000' />  <br />
+            <input onChange={handleChangeCardNumber} className="entryNumber" type="text" placeholder='e.g 1234 5678 9123 0000' />  <br />
+            {error&&cardNumber.length!==16?
+            <label className='errorsNumber'>Card number required</label>:""} <br />
             <label className='LabelExpdate'>EXP. DATE(MM/YY)</label> <br />
             <input className=" entryMonth" type="text" placeholder='MM' /> <br />
             <input className=" entryYear" type="text" placeholder='YY' /> <br />
             <label className='LabelCvv'>CVV</label> <br />
-            <input className=" entryCvv" type="text" placeholder='e.g 123' /> <br />
-            <button className='submit'> <span className='text'>Confirm</span></button>
+            <input onChange={handleChangeCvv} className=" entryCvv" type="text" placeholder='e.g 123' /> <br />
+            {error&&cvv.length !==3?
+            <label className='errorsCvv'>CVC must be numeric</label>:" "}  <br />
+            <button onClick={handleSubmit} className='submit'> <span className='text'>Confirm</span></button>
           </div>
         </div>
 
